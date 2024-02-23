@@ -1,0 +1,178 @@
+html, body{margin: 0;  padding: 0; height: 100%; text-align: center;}
+section{min-height: 100%;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+h1, h2, h3, a{font-family: 'Inter', sans-serif;  font-weight: 500;  color: #b1b1b1;  /*text-transform: uppercase;*/}
+h2{color: #5d7177; font-size: 44px;}
+h3{font-size: 40px; padding-top: 8%;margin-bottom: 5px;}
+hr{width: 500px;height: 5px;background: #2986ad;border: 0;margin: 0 autoL 40 auto;}
+
+/**---HEADER-------------------*/
+header{
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+#logo{
+  width: 140px;
+  float: left;
+  margin: 10px 0 0 50px;
+}
+#logo:hover{
+  transition: all 400ms;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#logo img{
+  width: 100%;
+}
+header nav{
+  float: right;
+  margin: 10px 50px 0 0;
+}
+header nav ul li{
+  float: left;
+  margin-right: 25px;
+}
+header nav ul li:hover{
+  transition: all 100ms;
+  padding-top: 3px;
+}
+header nav ul li:active{
+  transition: all 300ms;
+  padding-bottom: 30px;
+}
+header nav ul li a{
+  font-size: 16px;
+}
+/**---HOME-------------------*/
+
+#home{
+  opacity: 1.0;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 0 0 0;
+}
+.splash-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+  object-fit: cover;
+	z-index: -1;
+}
+/** Suora Front Logo */ 
+#home img{
+  margin: 18% auto 40% auto;
+  font-size: 140px;
+}
+#home-title:hover{
+  transition: all 400ms;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#home-title:not(hover){
+  transition: all 400ms;
+  opacity: 0.8;
+}
+
+#home h2{
+  margin: 0 auto 0 auto;
+  padding-left: 22%;
+  padding-right: 22%;
+  font-family: 'Inter';  font-weight: normal;  color: white;
+  text-shadow: 2px 2px 3px #000;
+}
+#home button:not(hover){
+  transition: all 400ms;
+  background-color: black;
+  border: none;
+  border-radius: 28px;
+  margin-top: 120px;
+  margin-bottom: 225px;
+  width: 250px;
+  height: 65px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;  font-weight: 300;  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px #000;
+}
+#home button:hover{
+  transition: all 400ms;
+  border: 5px solid #fff;
+  background-color: black;
+  opacity: 0.75;
+  font-family: 'Inter', sans-serif;  font-weight: 300;  color: white;
+  cursor: pointer;
+}
+/**---DETAIL-------------------*/
+
+#detail {
+  background-color: #000011;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#detail iframe{
+  margin: 0 auto;
+  display: block;
+}
+#detail img{
+  margin: 50px auto 50px auto;
+}
+/**---ROADMAP-------------------*/
+
+#roadmap{
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 230%;
+  margin-top: -40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#roadmap img{
+  box-shadow: 2px 2px 3px #000;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 50%;
+  position: relative;
+  left: -100;
+}
+#roadmap p{
+  font-family: 'Inter', sans-serif;  font-weight: 500;
+  font-size: 24px;
+  margin-top: auto;
+  text-shadow: 2px 2px 3px #000;
+  color: aliceblue;
+}
+
+#footer{
+  background-color: black;
+  height: 15%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#footer p{
+  font-family: 'Inter', sans-serif;  font-weight: 200;
+  font-size: 18px;
+  margin-top: 0px;
+  padding-top: 50px;
+  text-shadow: 2px 2px 3px #000;
+  color: aliceblue;
+}
+
+.inline-icon {
+  vertical-align: bottom;
+  --font-size: 18px !important;
+}
