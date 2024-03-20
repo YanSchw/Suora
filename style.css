@@ -1,3 +1,5 @@
+@import url('@fontsource/inter/index.css');
+
 html, body{margin: 0;  padding: 0; height: 100%; text-align: center;}
 section{min-height: 100%;}
 a{text-decoration: none;}
@@ -22,6 +24,7 @@ header{
   width: 140px;
   float: left;
   margin: 10px 0 0 50px;
+  overflow: hidden;
 }
 #logo:hover{
   transition: all 400ms;
@@ -30,6 +33,7 @@ header{
 }
 #logo img{
   width: 100%;
+  overflow: hidden;
 }
 header nav{
   float: right;
@@ -65,13 +69,16 @@ header nav ul li a{
 	bottom: 0;
 	height: 100%;
 	width: 100%;
-  object-fit: cover;
+	object-fit: cover;
 	z-index: -1;
+	overflow: hidden;
 }
 /** Suora Front Logo */ 
 #home img{
   margin: 18% auto 40% auto;
   font-size: 140px;
+  overflow: hidden;
+  width: 55%;
 }
 #home-title:hover{
   transition: all 400ms;
@@ -175,4 +182,8 @@ header nav ul li a{
 .inline-icon {
   vertical-align: bottom;
   --font-size: 18px !important;
+}
+#detail > iframe {
+	width: 128vh;
+	height: 72vh;
 }
