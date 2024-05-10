@@ -1,0 +1,42 @@
+.features>div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-name {
+    color: var(--text);
+    text-shadow: 3px 3px 30px var(--primary);
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.feature-desc {
+    margin: 25px;
+    color: var(--text);
+    font-weight: 400;
+    font-size: large;
+}
+
+.features>div>img {
+    width: 20%;
+    min-width: 240px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px var(--primary);
+}
+
+.features>div>div {
+    width: 50%;
+    margin: 45px;
+}
+
+@media only screen and (max-width: 800px) {
+    .features>div>div {
+        width: 80%;
+        display: none;
+    }
+    .features>div>img {
+        margin: 25px;
+    }
+}

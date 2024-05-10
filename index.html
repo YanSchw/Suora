@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Suora Engine
-    </title>
-    <meta charset="utf-8">
-	<!-- Add icon library -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link href="style.css" rel="stylesheet" href="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!--- Header --------------------------------------->
-    <header>
-      <div id="logo">
-        <a href="#"></a>
-        <img src="img/title.png" alt="LogoImg" >
-      </div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#detail">Overview</a></li>
-          <li><a href="#roadmap">Features</a></li>
-          <li><a href="https://github.com/YanSchw/SuoraEngine"><span class="inline-icon material-symbols-outlined">open_in_new</span>GitHub</a></li>
-        </ul>
-      </nav>
-    </header>
 
-      <!--- Home --------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, height=device-height" />
+    <meta name="description" content="Suora Engine | Game Engine | gamedev | Software Engineering">
+    <meta name="keywords" content="Suora Engine, Game Engine, Engine, Computer Science, gamedev">
+    <meta name="title" content="Suora Engine">
+    <title>Suora Engine</title>
 
-    <section id="home">
-	<div>
-		<video autoplay loop muted plays-inline onloadstart="this.playbackRate = 1.25;" class="splash-video">
-			<source src="img/splash.mp4" type="video/mp4">
-		</video>
-	</div>
-	
-      <hr>
-		<a id="home-title" href="https://github.com/YanSchw/SuoraEngine">
-			<img src="img/title.png" alt="Title">
-		</a>
-      <!--h1>SuoraEngine</h1-->
-      <h2>Suora is an open-source C++ Engine for building 3D real-time rendering Applications and interactive Content, especially Video Games.</h2>
-      <a href="download/download.html"><button type="button" name="button">
-			<span class="inline-icon material-symbols-outlined">download</span>
-			Download
-		</button></a>
-      </hr>
-    </section>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      <!--- Detail --------------------------------------->
-    <section id="detail">
-      <h3>Overview</h3>
-      <hr>
-      <iframe src="https://www.youtube.com/embed/xCGCenlCVAY?autoplay=1&mute=1&enablejsapi=1&loop=1" width="1280" height="720" align="center" frameborder="0" allow="autoplay"></iframe>
-      <a href="img/screenshot1.png"><img src="img/screenshot1.png" alt="Screenshot1" width="256" height="144"></a>
-      <a href="img/screenshot2.png"><img src="img/screenshot2.png" alt="Screenshot2" width="256" height="144"></a>
-      <a href="img/screenshot3.png"><img src="img/screenshot3.png" alt="Screenshot3" width="256" height="144"></a>
-      <a href="img/screenshot4.png"><img src="img/screenshot4.png" alt="Screenshot4" width="256" height="144"></a>
-      <a href="img/screenshot5.png"><img src="img/screenshot5.png" alt="Screenshot5" width="256" height="144"></a>
-      <a href="img/screenshot6.png"><img src="img/screenshot6.png" alt="Screenshot6" width="256" height="144"></a>
-    </section>
+<body>
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="root">
+        <section id="landing" class="hide">
+            <p id="landing-name">Suora</p>
+            <br>
+            <br>
+            <p>&gt; <span id="animated-text"></span></p>
+            <p id="arrow-down">&#8595;</p>
+        </section>
+        <section id="project-1" class="project hide">
+            <div>
+                <img src="img/suora.png" alt="preview"/>
+                <div>
+                    <p class="project-name">Suora Engine</p>
+                    <p class="project-desc">SuoraEngine is an open-source C++ Engine for building 3D real-time rendering Applications and interactive Content, especially Video Games.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/YanSchw/SuoraEngine" target="_blank"><div class="project-button"><img width="32" height="32" src="img/github.png" alt="github"/><span>GitHub</span></div></a>
+                        <a href="https://github.com/YanSchw/SuoraEngine/releases/download/0.10.0-release/SuoraEngine-0.10.0.zip"><div class="project-button"><img width="32" height="32" src="img/download.png" alt="link"/><span>Download</span></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project-2" class="overview hide">
+            <p class="project-name">Overview</p>
+            <iframe src="https://www.youtube.com/embed/xCGCenlCVAY?autoplay=1&mute=1&enablejsapi=1&loop=1" width="1280" height="720" align="center" frameborder="0" allow="autoplay"></iframe>
+        </section>
+        <section id="features-3" class="features hide">
+            <div>
+                <img src="img/SuoraCPP_Programming.png" alt="preview"/>
+                <div>
+                    <p class="feature-name">Gameplay Programming in C++</p>
+                    <p class="feature-desc">Gameplay Programming using C++ and SuoraBuildTool. Everything is devided into Modules. Full Clean Engine Build within 5 Minutes. Incremental C++ Build (Compile + Editor Startup) in <15 Seconds.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="feature-name">Gameplay Scripting in C#</p>
+                    <p class="feature-desc">Gameplay Scripting using C#. Extend Native C++ Classes and Functionality with C# and .Net Core 8. Full C# Build + HotReload in <5 Seconds.</p>
+                </div>
+                <img src="img/SuoraCSharp_Scripting.png" alt="preview"/>
+            </div>
+            <div>
+                <img src="img/VisualScripting.png" alt="preview"/>
+                <div>
+                    <p class="feature-name">Visual Scripting</p>
+                    <p class="feature-desc">Create custom Gameplay Logic using Visual Scripting. Easy interoperability with C++ using SuoraHeaderTool.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="hide">
+            <p>Contacts</p>
+            <div style="display: flex;">
+                <a href="mailto:schoessow.yannick@gmail.com?body=Hey%20Yannick%2C%0D%0A%0D%0A"><div><img width="64" height="64" src="img/mail.svg" alt="email"/></div></a>
+                <a href="https://github.com/yanschw" target="_blank"><div><img width="64" height="64" src="img/github.png" alt="github"/></div></a>
+            </div>
+            <p>&copy; 2024 Yannick Schössow. All rights reserved.</p>
+        </section>
+        <footer>
+            <p>Here is an Easter Egg 🥚</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
 
-      <!--- Roadmap --------------------------------------->
-    <section id="roadmap">
-      <h3>Features</h3>
-      <hr>
-      <img src="img/SuoraCPP_Programming.png" alt="Roadmap">
-      <p>Gameplay Programming using C++ and SuoraBuildTool. Everything is devided into Modules.</p>
-      <p>Full Clean Engine Build within 5 Minutes. Incremental C++ Build (Compile + Editor Startup) in <15 Seconds.</p>
-      <img src="img/SuoraCSharp_Scripting.png" alt="Roadmap">
-      <p>Gameplay Scripting using C#. Extend Native C++ Classes and Functionality with C# and .Net Core 8.</p>
-      <p>Full C# Build + HotReload in <5 Seconds.</p>
-      <img src="img/VisualScripting.png" alt="Roadmap">
-      <p>Create custom Gameplay Logic using Visual Scripting. Easy interoperability with C++ using SuoraHeaderTool.</p>
-    </section>
-
-      <!--- Footer --------------------------------------->
-    <footer id="footer">
-      <p>
-        Copyright (c) Yannick Schössow 2024
-      </p>
-    </footer>
-
-  </body>
 </html>

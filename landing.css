@@ -1,0 +1,66 @@
+
+#landing p {
+    color: var(--text);
+}
+
+#landing-name:hover {
+    text-shadow: 3px 3px 30px var(--primary);
+    font-size: 288px;
+    transition: 0.1s;
+}
+#landing-name:not(hover) {
+    font-family: "KATFYRED";
+    font-size: 256px;
+    text-shadow: 3px 3px 10px var(--primary);
+    transition: 0.1s;
+}
+@keyframes logo-sway {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+    100% { transform: rotate(0deg); }
+}
+#landing-name {
+    animation-name: logo-sway;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-move {
+    0% { bottom: 25%; }
+    50% { bottom: 5%; }
+    100% { bottom: 25%; }
+}
+#arrow-down {
+    font-size: 35px;
+    position: fixed;
+    bottom: 25%;
+    animation-name: arrow-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* animated text */
+
+#landing span {
+    color: var(--primary);
+    position: relative;
+}
+
+#landing span::before {
+    content: "";
+    height: 20px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: var(--primary);
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+#landing span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}

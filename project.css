@@ -1,0 +1,88 @@
+.project>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-name {
+    color: var(--text);
+    text-shadow: 3px 3px 30px var(--primary);
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.project-desc {
+    margin: 25px;
+    color: var(--text);
+    font-weight: 400;
+    font-size: large;
+}
+
+.project>div>img {
+    width: 40%;
+    min-width: 240px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 25px var(--primary);
+}
+
+.project>div>div {
+    width: 50%;
+    margin: 45px;
+}
+
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-buttons a {
+    text-decoration: none;
+}
+
+.project-button {
+    display: inline;
+    margin: 25px;
+    width: 256px;
+    height: 96px;
+}
+
+.project-button:hover {
+    cursor: pointer;
+    color: var(--primary);
+    box-shadow: 0px 0px 40px var(--primary);
+    border: 3px solid var(--primary);
+    border-radius: 12px;
+
+    transition: 0.35s;
+}
+
+.project-button:not(hover) {
+    display: grid;
+    place-items: center;
+
+    color: var(--text);
+    box-shadow: 0px 0px 40px rgba(0);
+    border: 2px solid var(--text);
+    border-radius: 32px;
+
+
+    transition: 0.35s;
+}
+
+@media only screen and (max-width: 600px) {
+    .project>div>div {
+        width: 80%;
+    }
+    .project-buttons {
+        flex-wrap: nowrap;
+    }
+    .project-button {
+        width: 64px;
+        height: 64px;
+    }
+    .project-button span {
+        display: none;
+    }
+}
